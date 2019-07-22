@@ -1,0 +1,500 @@
+Started GET "/" for ::1 at 2019-07-17 06:40:29 +0200
+Started GET "/" for ::1 at 2019-07-17 06:40:29 +0200
+Started GET "/" for ::1 at 2019-07-17 07:02:01 +0200
+Started GET "/" for ::1 at 2019-07-17 07:02:01 +0200
+Started GET "/" for ::1 at 2019-07-17 07:05:11 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (8.9ms)
+Completed 200 OK in 48ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (149.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (120.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateTodos (20190717050706)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190717050706_create_todos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190717050706"]]
+  ↳ bin/rails:4
+  [1m[35m (297.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-17 05:07:45.834318"], ["updated_at", "2019-07-17 05:07:45.834318"]]
+  ↳ bin/rails:4
+  [1m[35m (267.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/todo" for ::1 at 2019-07-17 07:08:17 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/todo"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-17 07:09:34 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todo" for ::1 at 2019-07-17 07:09:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/todo"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/todo" for ::1 at 2019-07-17 07:14:36 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/todo"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-17 07:14:45 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todo" for ::1 at 2019-07-17 07:14:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/todo"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/todos" for ::1 at 2019-07-17 07:14:58 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1557ms (Views: 1533.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-17 07:24:40 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 961ms (Views: 935.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/ideas" for ::1 at 2019-07-18 06:18:47 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/ideas"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/todos" for ::1 at 2019-07-18 06:18:57 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2683ms (Views: 2651.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:19:10 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (636.3ms)
+  Rendered todos/new.html.erb within layouts/application (641.3ms)
+Completed 200 OK in 782ms (Views: 772.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:24:27 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (3.1ms)
+  Rendered todos/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 156ms (Views: 151.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-18 06:24:38 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 156ms (Views: 150.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:24:42 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.6ms)
+  Rendered todos/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 137ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:37:13 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.8ms)
+  Rendered todos/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 169ms (Views: 163.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:37:22 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (2.5ms)
+  Rendered todos/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 149ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todos" for ::1 at 2019-07-18 06:37:28 +0200
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tYQPmve/Erm3URDwcaECelyCT0Rj0IOQucRLeFcPIwntrQMOhztertRLtNYxH1/Kh7qmfQe2R5r7gEOdXXswMw==", "commit"=>"Create Todo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:30
+  [1m[36mTodo Create (1.4ms)[0m  [1m[32mINSERT INTO "todos" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-07-18 04:37:28.810187"], ["updated_at", "2019-07-18 04:37:28.810187"]]
+  ↳ app/controllers/todos_controller.rb:30
+  [1m[35m (83.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:30
+Redirected to http://localhost:3000/todos/1
+Completed 302 Found in 98ms (ActiveRecord: 84.8ms)
+
+
+Started GET "/todos/1" for ::1 at 2019-07-18 06:37:28 +0200
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 195ms (Views: 148.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/1/edit" for ::1 at 2019-07-18 06:37:35 +0200
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.6ms)
+  Rendered todos/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 142ms (Views: 134.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos/1" for ::1 at 2019-07-18 06:37:39 +0200
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 156ms (Views: 149.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos/1/edit" for ::1 at 2019-07-18 06:37:42 +0200
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.7ms)
+  Rendered todos/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 159ms (Views: 149.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/todos/1" for ::1 at 2019-07-18 06:37:46 +0200
+Processing by TodosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7aMqyvNvr5rHkcKLuvYbityCswMDhRLopyqzivVu2GYHACErShpAFvRNTqhAiYaupAp/OjC/FE7kXcEvkEtdNg==", "commit"=>"Update Todo", "id"=>"1"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:44
+Redirected to http://localhost:3000/todos/1
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/1" for ::1 at 2019-07-18 06:37:46 +0200
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 150ms (Views: 143.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-18 06:37:48 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 121ms (Views: 115.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:37:52 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.5ms)
+  Rendered todos/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 122ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-18 06:37:56 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 146ms (Views: 141.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-18 06:38:08 +0200
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (2.9ms)
+  Rendered todos/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 149ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-18 06:38:09 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 159ms (Views: 153.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/todos/1" for ::1 at 2019-07-18 06:38:17 +0200
+Processing by TodosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lfqCmLI/Fm9dQkSjEYMeIyZf81IseJAWLk9dVudJS+7N044MwrtaeD5Y4IVRPUOT/Wcaa0geVBxsC1Wz7T1Y1A==", "id"=>"1"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:57
+  [1m[36mTodo Destroy (2.4ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/todos_controller.rb:57
+  [1m[35m (109.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:57
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 126ms (ActiveRecord: 112.3ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-18 06:38:17 +0200
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 130ms (Views: 124.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-18 23:21:52 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 136ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for ::1 at 2019-07-19 06:27:47 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 2551ms (Views: 2498.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/todos/new" for ::1 at 2019-07-20 23:16:14 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (87.5ms)
+  Rendered todos/new.html.erb within layouts/application (98.8ms)
+Completed 200 OK in 2096ms (Views: 2033.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/todos" for ::1 at 2019-07-20 23:16:20 +0200
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6BX0hKwM2Q3Vef2oqabTziT70xiNS8Jc4PRFdVVcff7QNbFZlheQleobiongFk/eZNrV5Hwz+mg80Fp+hgAPuQ==", "commit"=>"Create Todo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:30
+  [1m[36mTodo Create (1.4ms)[0m  [1m[32mINSERT INTO "todos" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-07-20 21:16:20.684202"], ["updated_at", "2019-07-20 21:16:20.684202"]]
+  ↳ app/controllers/todos_controller.rb:30
+  [1m[35m (103.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:30
+Redirected to http://localhost:3000/todos/2
+Completed 302 Found in 115ms (ActiveRecord: 104.7ms)
+
+
+Started GET "/todos/2" for ::1 at 2019-07-20 23:16:20 +0200
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 191ms (Views: 142.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos/2/edit" for ::1 at 2019-07-20 23:16:24 +0200
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:67
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (1.7ms)
+  Rendered todos/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 127ms (Views: 120.3ms | ActiveRecord: 0.3ms)
+
+
