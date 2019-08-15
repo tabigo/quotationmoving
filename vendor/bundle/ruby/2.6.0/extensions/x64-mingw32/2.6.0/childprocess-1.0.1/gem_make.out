@@ -1,0 +1,5 @@
+current directory: C:/Users/Removal/app rails/removal/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+C:/Ruby26-x64/bin/ruby.exe mkrf_conf.rb
+
+current directory: C:/Users/Removal/app rails/removal/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+C:/Ruby26-x64/bin/ruby.exe -rrubygems C:/Users/Removal/app\ rails/removal/vendor/bundle/ruby/2.6.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR\=C:/Users/Removal/app\ rails/removal/vendor/bundle/ruby/2.6.0/extensions/x64-mingw32/2.6.0/childprocess-1.0.1 RUBYLIBDIR\=C:/Users/Removal/app\ rails/removal/vendor/bundle/ruby/2.6.0/extensions/x64-mingw32/2.6.0/childprocess-1.0.1
