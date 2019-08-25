@@ -1,5 +1,5 @@
 current directory: C:/Users/Removal/app rails/removal/vendor/bundle/ruby/2.6.0/gems/libv8-3.16.14.19/ext/libv8
-C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20190825-92128-bflt59.rb extconf.rb
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20190825-23088-152d0ms.rb extconf.rb
 creating Makefile
 which: no python in (/c/Ruby26-x64/bin:/mingw64/bin:/usr/bin:/c/Ruby26-x64/bin:/c/ProgramData/Oracle/Java/javapath:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/WiFi/bin:/c/Program Files/Common Files/Intel/WirelessCommon:/c/Program Files (x86)/Skype/Phone:/c/Program Files/nodejs:/c/Program Files/Git/cmd:/c/Ruby26-x64/bin:/c/Program Files/heroku/bin:/c/Users/Removal/AppData/Roaming/npm)
 System nie mo?e odnale?? okre?lonej ?cie?ki.
